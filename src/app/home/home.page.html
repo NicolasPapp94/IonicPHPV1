@@ -1,0 +1,16 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>
+      Listado de usuarios
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content padding>
+  <ion-button color="primary" (click)="TraerDatos()">Traer Datos</ion-button>
+  <ion-button color="danger" (click)="LimpiarDatos()">Limpiar Datos</ion-button>
+  <ion-item *ngFor="let item of respuesta_servidor">
+    <ion-label>{{item.nombre}}</ion-label>
+
+  </ion-item>
+</ion-content>
